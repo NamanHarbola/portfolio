@@ -6,7 +6,7 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import React from 'react';
-import Image from 'next/image'; // Don't forget to import Image
+import Image from 'next/image';
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -43,18 +43,18 @@ const Banner = () => {
             >
                 <div className="max-md:grow max-md:flex flex-col justify-center items-start max-w-[544px]">
                     
-                    {/* PROFILE PICTURE ADDED HERE */}
-                    <div className="relative w-[200px] h-[200px] md:w-[250px] md:h-[250px] rounded-full overflow-hidden border-2 border-primary mb-6 slide-up-and-fade">
-    <Image
-        src="/profile.jpg" 
-        alt="Naman Harbola"
-        fill
-        className="object-cover object-top"
-        priority 
-    />
-</div>
+                    {/* ENHANCED PROFILE PICTURE */}
+                    <div className="relative w-[150px] h-[150px] md:w-[200px] md:h-[200px] rounded-full overflow-hidden border-2 border-primary mb-6 slide-up-and-fade shadow-2xl">
+                        <Image
+                            src="/profile.jpg" 
+                            alt="Naman Harbola"
+                            fill
+                            className="object-cover object-top"
+                            priority 
+                        />
+                    </div>
 
-                    <h1 className="banner-title slide-up-and-fade leading-[.95] text-6xl sm:text-[80px] font-anton">
+                    <h1 className="banner-title slide-up-and-fade leading-[.95] text-6xl sm:text-[80px] font-anton text-white">
                         <span className="text-primary">SOFTWARE </span>
                         <br /> <span className="ml-4">DEVELOPER</span>
                     </h1>
@@ -67,15 +67,17 @@ const Banner = () => {
                         experience in building high-performance, scalable, and
                         responsive web solutions.
                     </p>
+
+                    {/* UPDATED WHATSAPP BUTTON */}
                     <Button
                         as="link"
                         target="_blank"
                         rel="noopener noreferrer"
-                        href={GENERAL_INFO.upworkProfile}
+                        href={GENERAL_INFO.upworkProfile} // Ensure this is set to your WhatsApp link in lib/data.ts
                         variant="primary"
                         className="mt-9 banner-button slide-up-and-fade"
                     >
-                        Hire Me
+                        Chat on WhatsApp
                     </Button>
                 </div>
 

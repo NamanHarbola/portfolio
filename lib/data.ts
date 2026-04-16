@@ -7,7 +7,7 @@
         emailBody: 'Hi Naman, I am reaching out to you because...',
 
         oldPortfolio: 'https://portfolio-swart-eight-80.vercel.app/',
-        upworkProfile: 'https://www.upwork.com/freelancers/tajmirul',
+        upworkProfile: "https://wa.me/911234567890?text=Hi%20Naman,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20chat%20about%20a%20project!",
     };
 
     export const SOCIAL_LINKS = [
