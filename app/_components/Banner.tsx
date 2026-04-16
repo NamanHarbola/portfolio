@@ -6,6 +6,7 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import React from 'react';
+import Image from 'next/image'; // Don't forget to import Image
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -41,6 +42,18 @@ const Banner = () => {
                 ref={containerRef}
             >
                 <div className="max-md:grow max-md:flex flex-col justify-center items-start max-w-[544px]">
+                    
+                    {/* PROFILE PICTURE ADDED HERE */}
+                    <div className="relative w-[200px] h-[200px] md:w-[250px] md:h-[250px] rounded-full overflow-hidden border-2 border-primary mb-6 slide-up-and-fade">
+    <Image
+        src="/profile.jpg" 
+        alt="Naman Harbola"
+        fill
+        className="object-cover object-top"
+        priority 
+    />
+</div>
+
                     <h1 className="banner-title slide-up-and-fade leading-[.95] text-6xl sm:text-[80px] font-anton">
                         <span className="text-primary">SOFTWARE </span>
                         <br /> <span className="ml-4">DEVELOPER</span>
