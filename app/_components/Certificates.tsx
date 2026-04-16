@@ -13,7 +13,6 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 const Certificates = () => {
     const containerRef = useRef<HTMLDivElement>(null);
 
-    // Fade-in animation as you scroll
     useGSAP(
         () => {
             gsap.from('.certificate-item', {
@@ -43,7 +42,6 @@ const Certificates = () => {
                             key={cert.title}
                             className="certificate-item flex flex-col md:flex-row items-start md:items-center justify-between py-8 border-b border-white/10"
                         >
-                            {/* Left Side: Info (No hover glow) */}
                             <div className="flex-1 pr-4">
                                 <p className="text-sm md:text-base text-muted-foreground font-medium uppercase tracking-wider">
                                     {cert.issuer}
@@ -56,22 +54,22 @@ const Certificates = () => {
                                 </p>
                             </div>
 
-                            {/* Right Side: Image Box (Static, no hover overlay) */}
-                            <div className="mt-6 md:mt-0 relative overflow-hidden rounded-md border border-white/10 bg-white/5 p-1 shadow-xl">
-                                <div className="relative w-full md:w-[220px] lg:w-[280px] aspect-[1.41/1] overflow-hidden rounded-sm group">
+                            {/* Corrected Image Container */}
+                            <div className="mt-6 md:mt-0 w-full md:w-auto relative overflow-hidden rounded-md border border-white/10 bg-white/5 p-1 shadow-xl">
+                                <div className="relative w-full aspect-[1.41/1] md:w-[220px] lg:w-[280px] overflow-hidden rounded-sm group">
                                     <Image
                                         src={cert.image}
                                         alt={cert.title}
                                         fill
                                         className="object-cover"
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 280px, 220px"
                                     />
                                     
-                                    {/* Simple "View" link that is always accessible or visible on small icon hover */}
                                     <a 
                                         href={cert.image} 
                                         target="_blank" 
                                         rel="noopener noreferrer"
-                                        className="absolute top-2 right-2 p-2 bg-black/50 rounded-full text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                                        className="absolute top-2 right-2 p-2 bg-black/50 rounded-full text-white opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                                         title="View Full Certificate"
                                     >
                                         <ExternalLink size={16} />
