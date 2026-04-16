@@ -32,24 +32,7 @@ const Experiences = () => {
         { scope: containerRef },
     );
 
-    useGSAP(
-        () => {
-            const tl = gsap.timeline({
-                scrollTrigger: {
-                    trigger: containerRef.current,
-                    start: 'bottom 50%',
-                    end: 'bottom 20%',
-                    scrub: 1,
-                },
-            });
-
-            tl.to(containerRef.current, {
-                y: -150,
-                opacity: 0,
-            });
-        },
-        { scope: containerRef },
-    );
+  
 
     return (
         <section className="py-section" id="my-experience">

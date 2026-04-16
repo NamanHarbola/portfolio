@@ -3,6 +3,7 @@ import Banner from './_components/Banner';
 import Experiences from './_components/Experiences';
 import Skills from './_components/Skills';
 import ProjectList from './_components/ProjectList';
+import Certificates from './_components/Certificates'; // 👈 add this
 
 export default function Home() {
     return (
@@ -11,7 +12,8 @@ export default function Home() {
             <AboutMe />
             <Skills />
             <Experiences />
+            <Certificates /> {/* 👈 add this */}
             <ProjectList />
         </div>
     );
-}
+}   
