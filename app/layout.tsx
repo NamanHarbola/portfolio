@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { Anton, Roboto_Flex } from 'next/font/google';
 import { ReactLenis } from 'lenis/react';
-
 import './globals.css';
 import 'lenis/dist/lenis.css';
 import Footer from '@/components/Footer';
@@ -9,7 +8,7 @@ import ScrollProgressIndicator from '@/components/ScrollProgressIndicator';
 import ParticleBackground from '@/components/ParticleBackground';
 import Navbar from '@/components/Navbar';
 import CustomCursor from '@/components/CustomCursor';
-import Preloader from '@/components/Preloader'; // Uses the @ alias correctly
+import Preloader from '@/components/Preloader';
 import StickyEmail from './_components/StickyEmail';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import Script from 'next/script';
@@ -28,10 +27,61 @@ const robotoFlex = Roboto_Flex({
     variable: '--font-roboto-flex',
 });
 
-// Personalize your site metadata here
 export const metadata: Metadata = {
     title: 'Naman Harbola | Full-Stack Developer',
-    description: 'Portfolio of Naman Harbola, a Software Developer specializing in React, Next.js, and E-commerce solutions.',
+    description:
+        'Portfolio of Naman Harbola — Full-Stack Developer with 3+ years of experience building scalable web apps using React, Next.js, Node.js, and more.',
+    keywords: [
+        'Naman Harbola',
+        'Full Stack Developer',
+        'React Developer',
+        'Next.js Developer',
+        'Node.js',
+        'Web Developer India',
+        'Software Developer Portfolio',
+    ],
+    authors: [
+        {
+            name: 'Naman Harbola',
+            url: 'https://portfolio-phi-ten-5v9g6mtd5x.vercel.app',
+        },
+    ],
+    metadataBase: new URL('https://portfolio-phi-ten-5v9g6mtd5x.vercel.app'),
+
+    openGraph: {
+        title: 'Naman Harbola | Full-Stack Developer',
+        description:
+            'Full-Stack Developer with 3+ years of experience. React, Next.js, Node.js, MongoDB and more.',
+        url: 'https://portfolio-phi-ten-5v9g6mtd5x.vercel.app',
+        siteName: 'Naman Harbola Portfolio',
+        images: [
+            {
+                url: '/profile.jpg',
+                width: 1200,
+                height: 630,
+                alt: 'Naman Harbola - Full Stack Developer',
+            },
+        ],
+        locale: 'en_IN',
+        type: 'website',
+    },
+
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Naman Harbola | Full-Stack Developer',
+        description:
+            'Full-Stack Developer with 3+ years of experience. React, Next.js, Node.js, MongoDB and more.',
+        images: ['/profile.jpg'],
+    },
+
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+        },
+    },
 };
 
 export default function RootLayout({
@@ -54,7 +104,7 @@ export default function RootLayout({
             </Script>
             <body
                 className={`${antonFont.variable} ${robotoFlex.variable} antialiased`}
-                suppressHydrationWarning // Prevents body-level style mismatches from crashing the app
+                suppressHydrationWarning
             >
                 <ReactLenis
                     root
@@ -66,7 +116,6 @@ export default function RootLayout({
                     <Navbar />
                     <main>{children}</main>
                     <Footer />
-
                     <CustomCursor />
                     <Preloader />
                     <ScrollProgressIndicator />
