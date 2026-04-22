@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
             userAgent: '*',
             allow: '/',
         },
-        sitemap: 'https://portfolio-phi-ten-5v9g6mtd5x.vercel.app/sitemap.xml',
+        sitemap: 'https://namanharbola.me/sitemap.xml',
     };
 }
