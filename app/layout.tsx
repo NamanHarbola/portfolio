@@ -43,16 +43,16 @@ export const metadata: Metadata = {
     authors: [
         {
             name: 'Naman Harbola',
-            url: 'https://portfolio-phi-ten-5v9g6mtd5x.vercel.app',
+            url: 'https://namanharbola.me', // ✅ updated
         },
     ],
-    metadataBase: new URL('https://portfolio-phi-ten-5v9g6mtd5x.vercel.app'),
+    metadataBase: new URL('https://namanharbola.me'), // ✅ updated
 
     openGraph: {
         title: 'Naman Harbola | Full-Stack Developer',
         description:
             'Full-Stack Developer with 3+ years of experience. React, Next.js, Node.js, MongoDB and more.',
-        url: 'https://portfolio-phi-ten-5v9g6mtd5x.vercel.app',
+        url: 'https://namanharbola.me', // ✅ updated
         siteName: 'Naman Harbola Portfolio',
         images: [
             {
