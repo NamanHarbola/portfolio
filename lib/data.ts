@@ -304,8 +304,13 @@
             duration: 'Dec 2025 - Present',
         },
         {
-            title: 'E-commerce Developer',
-            company: 'Homesake Pvt Ltd',
+            title: 'Artificial Intelligence Engineer',
+            company: 'Adobe',
+            duration: 'Jun 2025 - Nov 2025',
+        },
+        {
+            title: 'E-Commerce Executive',
+            company: 'Homesake Innovation Handart Pvt Ltd',
             duration: 'Apr 2024 - June 2025',
         },
         {
