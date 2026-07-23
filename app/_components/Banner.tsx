@@ -63,9 +63,9 @@ const Banner = () => {
                         <span className="font-medium text-foreground">
                             Naman Harbola
                         </span>
-                        . A creative Full-Stack Developer with 3+ years of
-                        experience in building high-performance, scalable, and
-                        responsive web solutions.
+                        . A Senior Software Engineer 2 at Tech Mahindra with
+                        3+ years of experience in building high-performance,
+                        scalable, and responsive web solutions.
                     </p>
 
                     {/* UPDATED WHATSAPP BUTTON */}
