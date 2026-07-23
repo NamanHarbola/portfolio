@@ -299,8 +299,8 @@
 
     export const MY_EXPERIENCE = [
         {
-            title: 'Software Developer',
-            company: 'TECH M FLNCE',
+            title: 'Senior Software Engineer 2',
+            company: 'Tech Mahindra (FLNCE Project)',
             duration: 'Dec 2025 - Present',
         },
         {
@@ -332,5 +332,17 @@
         issuer: 'Homesake Pvt Ltd',
         year: '2025',
         image: '/certificates/1753945593907.jpg',
+    },
+    {
+        title: '1st Position — Meta PyTorch OpenEnv Hackathon',
+        issuer: 'Meta x The Coding Hackathon x DataSlexIndia',
+        year: '2026',
+        image: '/certificates/meta-pytorch-hackathon-2026.jpg',
+    },
+    {
+        title: '"Paint for A Change" Wall Painting Drive',
+        issuer: 'Silent But Strong Foundation',
+        year: '2026',
+        image: '/certificates/paint-for-a-change-2026.jpg',
     },      // add more as needed
 ];
