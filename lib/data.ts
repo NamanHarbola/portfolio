@@ -295,6 +295,73 @@
         - 🗄️ Used MongoDB to store user data, resume drafts, and generated content.<br/>
         - 🔐 Implemented JWT-based authentication for secure account access.`,
     },
+    {
+        title: 'Aqua — Water & Calorie Tracker',
+        slug: 'aqua-tracker',
+        techStack: ['React', 'Vite', 'Tailwind CSS', 'Supabase', 'PWA', 'OneSignal'],
+        thumbnail: '/projects/thumbnail/aqua-tracker.png',
+        longThumbnail: '/projects/long/aqua-tracker.png',
+        images: [],
+        liveUrl: 'https://questlogs.netlify.app/',
+        sourceCode: 'https://github.com/NamanHarbola/water-tracker',
+        year: 2026,
+        description: `
+        A mobile-first PWA that helps a small household stay on top of their daily water and calorie goals.<br/><br/>
+
+        Key Features:<br/>
+        <ul>
+            <li>💧 Hourly water reminders with push notifications, cleared only once a short video clip of drinking water is logged</li>
+            <li>🍛 Calorie tracker with a built-in Indian food database for quick logging against a daily goal</li>
+            <li>📊 Admin dashboard to review a user's water/calorie history and clips over time</li>
+            <li>📱 Installable as a PWA with offline-friendly camera-based logging</li>
+        </ul>
+        `,
+        role: `
+        Solo Full-Stack Developer <br/>
+        <ul>
+            <li>⚙️ Built the frontend in React + Vite, backend and auth on Supabase</li>
+            <li>🔔 Wired up push reminders via OneSignal that stop only after a clip is logged</li>
+            <li>🗄️ Designed the Supabase schema for water logs, calorie logs, goals, and admin roles</li>
+            <li>🛠️ Built the admin panel for reviewing user activity and clips</li>
+        </ul>
+        `,
+    },
+    {
+        title: 'Tim Bells',
+        slug: 'timbells',
+        techStack: ['HTML', 'CSS', 'JavaScript', 'Netlify'],
+        thumbnail: '/projects/thumbnail/timbells.jpg',
+        longThumbnail: '/projects/long/timbells.jpg',
+        images: [
+            '/projects/images/timbells-1.jpg',
+            '/projects/images/timbells-2.jpg',
+            '/projects/images/timbells-3.jpg',
+        ],
+        liveUrl: 'https://timbells.netlify.app/',
+        sourceCode: 'https://github.com/NamanHarbola/timbells',
+        year: 2026,
+        description: `
+        A fully static online storefront built for a small handmade crochet business.<br/><br/>
+
+        Key Features:<br/>
+        <ul>
+            <li>🧶 Category and budget filtering to browse handmade crochet pieces</li>
+            <li>💬 Instagram DM and email-based ordering, plus a custom order request form</li>
+            <li>🎵 Persistent background music across page navigations</li>
+            <li>📱 Floating WhatsApp and Instagram buttons with pre-filled messages</li>
+            <li>🔍 SEO set up end-to-end: sitemap, robots.txt, Google Search Console</li>
+        </ul>
+        `,
+        role: `
+        Solo Developer <br/>
+        <ul>
+            <li>🎨 Built a fully static, multi-page site with no backend</li>
+            <li>🔧 Debugged deployment issues including broken redirects and iframe architecture problems</li>
+            <li>🛒 Built shop filtering and a custom order form for the client's product catalog</li>
+            <li>📈 Set up SEO infrastructure for organic discovery</li>
+        </ul>
+        `,
+    },
     ];
 
     export const MY_EXPERIENCE = [
